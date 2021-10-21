@@ -13,7 +13,11 @@ const forecast = (latitude, longitude, callback) => {
                 + '. It is currently '
                 + body.current.temperature
                 + ' out. it feels like '
-                + body.current.feelslike)
+                + body.current.feelslike + '. '
+                + 'The wind speed is '
+                + body.current.wind_speed + ', '
+                + 'and the wind direction is '
+                + body.current.wind_dir)
         }
     })
 
